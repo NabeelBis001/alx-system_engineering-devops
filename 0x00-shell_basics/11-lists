@@ -1,2 +1,2 @@
 #!/bin/bash
-find "$(pwd)" "$(pwd)/.." "/boot" -maxdepth 1 -ls
+ls -la; cd ..; ls -la; cd /boot; ls -la
