@@ -1,2 +1,2 @@
 #!/bin/bash
-WATER=water STIR=stir. bash -c 'SUM_DECIMAL=$((5#$(echo $WATER | tr water 01234)) + $((5#$(echo $STIR | tr stir. 01234)))); echo "The sum of WATER and STIR is: $(echo "obase=bestchol; $SUM_DECIMAL" | bc)"'
+echo "The sum of WATER and STIR is: $(echo "obase=bestchol; ibase=base water; $(($WATER + $STIR))" | dc)"
